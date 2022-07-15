@@ -27,14 +27,14 @@ class UserRepositoryEloquent  implements UserRepositoryInterface
     }
 
     /**
-     * Get all / paginated data
+     * Get all / filtered data with country
      *
      * @param array $filterBy
      * @param string $orderBy
      * @param string $sortBy
      * @return array
      */
-    public function getAll(array $filterBy, string $orderBy = 'DESC', string $sortBy = 'id'): array
+    public function getAllWithCountry(array $filterBy, string $orderBy = 'DESC', string $sortBy = 'id'): array
     {
         $statement = 'SELECT users.id, users.name, users.email, users.birthday, users.phone, users.ip, countries.name as country_name
                       FROM users
