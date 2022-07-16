@@ -66,6 +66,7 @@ trait DataTableTrait
             'per_page' => $this->pageOffset,
             'current_page' => $this->currentPage,
             'total' => $this->total,
+            'status' => 'success',
         ];
     }
 

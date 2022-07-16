@@ -56,6 +56,7 @@ in the `.env` file accordingly
 
 # Unit Test
 - Run Tests: `php artisan test`
+  - for windows, to avoid warning of TTY mode, run: `php artisan test --without-tty`
 - Check the test file in `tests/Unit/UserListTest.php`
 
 # Postman
