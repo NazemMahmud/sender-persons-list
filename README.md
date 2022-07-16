@@ -3,10 +3,14 @@
 
 # Table of Contents
 
-| No. | Title                                                               |
-|-----|---------------------------------------------------------------------|
-| 1   | [Todos](#task-implemented)                                          |
-| 2   | [Installation](#installation)                                       |
+| No. | Title                                         |
+|-----|-----------------------------------------------|
+| 1   | [Todos](#task-implemented)                    |
+| 2   | [Installation](#installation)                 |
+| 3   | [Upload data from CSV](#upload-data-from-CSV) |
+| 4   | [Run Project](#run-project)                   |
+| 5   | [Unit Test](#unit-test)                       |
+| 6   | [Postman](#postman)                           |
 
 
 
@@ -25,16 +29,36 @@
 
 
 # Installation
-- For implementation used: **Laravel**, **Vue.js** and **PostgreSQL**
+- For implementation used: **Laravel**, **Vue.js**, **PostgreSQL** and **Redis** (_phpredis_)
 - Laravel version `^8.0` is used. So, respective PHP version is pre-required to install
 - After git clone, copy `env.example` and paste as `.env`
-- Update DB_PASSWORD in env file. Give your own DB password
+- Update **DB_PASSWORD** in `.env` file. **Provide your own DB password**
 - You need redis installed and running in your system
 - Install composer packages: run `composer install`
 - Install npm packages: run `npm install`
 - Key generate: `php artisan key:generate`
 - Create the respective table: **sender_db**. Then migrate: `php artisan migrate`
+  - If you use any other table name, update that in the `.env` file
+
+# Upload data from CSV
+- CSV file is provided here named `test-data.csv` This path is used in `.env` to upload data to DB.
 - Run command to upload data from CSV file to DB: `php artisan upload:csvtodb`
-  - CSV file is provided here named `test-data.csv` This path is used in .env to upload data to DB.
+
+# Run Project
 - Run server: `php artisan serve`
 - Run Vue: `npm run hot`
+
+By default, it is run under `http://localhost:8000/` URL. If any part of the URL is changed, update 
+- MIX_BASE_URL
+- MIX_API_BASE_URL
+
+in the `.env` file accordingly
+
+# Unit Test
+- Run Tests: `php artisan test`
+- Check the test file in `tests/Unit/UserListTest.php`
+
+# Postman
+- **Postman API collection** is provided here: `Email Sender.postman_collection.json`
+**For environment Variable**,
+- Set **BASE_URL** like, `http://localhost:port/api` 

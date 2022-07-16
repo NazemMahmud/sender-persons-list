@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "92f10cd4-a19d-4eff-a3ba-5a23bdad127c",
+		"name": "Email Sender",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1449184"
+	},
+	"item": [
+		{
+			"name": "Get Users List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/users?pageOffset=20&page=1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "1969",
+							"disabled": true
+						},
+						{
+							"key": "pageOffset",
+							"value": "20"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "month",
+							"value": "11",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Users List (Success)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users?pageOffset=20&page=1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "year",
+									"value": "1969",
+									"disabled": true
+								},
+								{
+									"key": "pageOffset",
+									"value": "20"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "month",
+									"value": "11",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 22:36:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Jul 2022 22:36:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.2"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 100000,\n            \"name\": \"Ron West\",\n            \"email\": \"Ron_West5742@zorer.org\",\n            \"birthday\": \"1982-01-16 22:49:48\",\n            \"phone\": \"1-117-253-1084\",\n            \"ip\": \"120.180.130.17\",\n            \"country_name\": \"Serbia\"\n        },\n        {\n            \"id\": 99999,\n            \"name\": \"Estrella Janes\",\n            \"email\": \"Estrella_Janes8312@eirey.tech\",\n            \"birthday\": \"1961-05-08 08:06:47\",\n            \"phone\": \"6-007-340-5124\",\n            \"ip\": \"45.28.120.133\",\n            \"country_name\": \"Mauritius\"\n        },\n        {\n            \"id\": 99998,\n            \"name\": \"Tyson Gardner\",\n            \"email\": \"Tyson_Gardner2076@joiniaa.com\",\n            \"birthday\": \"1926-06-18 10:38:28\",\n            \"phone\": \"0-628-544-4753\",\n            \"ip\": \"73.148.116.197\",\n            \"country_name\": \"Tuvalu\"\n        },\n        {\n            \"id\": 99997,\n            \"name\": \"Rufus Bloom\",\n            \"email\": \"Rufus_Bloom9567@bungar.biz\",\n            \"birthday\": \"1957-04-06 16:02:45\",\n            \"phone\": \"6-426-224-0007\",\n            \"ip\": \"26.141.33.250\",\n            \"country_name\": \"Botswana\"\n        },\n        {\n            \"id\": 99996,\n            \"name\": \"Cedrick Lewis\",\n            \"email\": \"Cedrick_Lewis8241@twace.org\",\n            \"birthday\": \"1929-03-20 08:50:30\",\n            \"phone\": \"0-255-284-2707\",\n            \"ip\": \"56.20.106.164\",\n            \"country_name\": \"Ecuador\"\n        },\n        {\n            \"id\": 99995,\n            \"name\": \"Bryon Wright\",\n            \"email\": \"Bryon_Wright4053@yahoo.com\",\n            \"birthday\": \"1945-01-19 12:29:27\",\n            \"phone\": \"4-775-006-1476\",\n            \"ip\": \"135.52.162.18\",\n            \"country_name\": \"Jordan\"\n        },\n        {\n            \"id\": 99994,\n            \"name\": \"Sarah Flanders\",\n            \"email\": \"Sarah_Flanders9739@deavo.com\",\n            \"birthday\": \"1971-05-16 15:04:20\",\n            \"phone\": \"2-062-460-5460\",\n            \"ip\": \"73.242.246.166\",\n            \"country_name\": \"Taiwan\"\n        },\n        {\n            \"id\": 99993,\n            \"name\": \"Gemma Keys\",\n            \"email\": \"Gemma_Keys8860@nimogy.biz\",\n            \"birthday\": \"1924-11-21 08:31:46\",\n            \"phone\": \"5-327-172-4176\",\n            \"ip\": \"238.102.3.214\",\n            \"country_name\": \"Myanmar\"\n        },\n        {\n            \"id\": 99992,\n            \"name\": \"Ryan Shaw\",\n            \"email\": \"Ryan_Shaw3216@famism.biz\",\n            \"birthday\": \"1977-06-24 02:07:11\",\n            \"phone\": \"8-312-335-6036\",\n            \"ip\": \"34.124.229.27\",\n            \"country_name\": \"Malta\"\n        },\n        {\n            \"id\": 99991,\n            \"name\": \"Daron Dunbar\",\n            \"email\": \"Daron_Dunbar6369@bauros.biz\",\n            \"birthday\": \"2010-05-31 10:07:11\",\n            \"phone\": \"3-353-610-6318\",\n            \"ip\": \"240.117.239.187\",\n            \"country_name\": \"Estonia\"\n        },\n        {\n            \"id\": 99990,\n            \"name\": \"Caitlyn Moore\",\n            \"email\": \"Caitlyn_Moore8200@mafthy.com\",\n            \"birthday\": \"1988-11-27 09:55:07\",\n            \"phone\": \"2-072-716-7520\",\n            \"ip\": \"122.242.138.225\",\n            \"country_name\": \"Jordan\"\n        },\n        {\n            \"id\": 99989,\n            \"name\": \"Irene Freeburn\",\n            \"email\": \"Irene_Freeburn7112@yahoo.com\",\n            \"birthday\": \"1907-01-18 13:09:18\",\n            \"phone\": \"7-454-407-6785\",\n            \"ip\": \"234.50.110.100\",\n            \"country_name\": \"Netherlands\"\n        },\n        {\n            \"id\": 99988,\n            \"name\": \"Harry Briggs\",\n            \"email\": \"Harry_Briggs7988@joiniaa.com\",\n            \"birthday\": \"2013-06-06 08:00:52\",\n            \"phone\": \"2-288-151-4083\",\n            \"ip\": \"108.26.41.50\",\n            \"country_name\": \"Gabon\"\n        },\n        {\n            \"id\": 99987,\n            \"name\": \"Angelica Overson\",\n            \"email\": \"Angelica_Overson3454@brety.org\",\n            \"birthday\": \"1915-02-12 18:18:51\",\n            \"phone\": \"8-166-178-1585\",\n            \"ip\": \"18.172.241.65\",\n            \"country_name\": \"Vietnam\"\n        },\n        {\n            \"id\": 99986,\n            \"name\": \"Irene Shepherd\",\n            \"email\": \"Irene_Shepherd9844@ovock.tech\",\n            \"birthday\": \"2004-09-06 09:17:51\",\n            \"phone\": \"6-878-851-7205\",\n            \"ip\": \"67.120.131.91\",\n            \"country_name\": \"Egypt\"\n        },\n        {\n            \"id\": 99985,\n            \"name\": \"Matt Connor\",\n            \"email\": \"Matt_Connor5456@joiniaa.com\",\n            \"birthday\": \"1912-03-14 03:39:04\",\n            \"phone\": \"6-333-657-5781\",\n            \"ip\": \"162.224.57.98\",\n            \"country_name\": \"Brunei\"\n        },\n        {\n            \"id\": 99984,\n            \"name\": \"Matthew Yarwood\",\n            \"email\": \"Matthew_Yarwood2319@brety.org\",\n            \"birthday\": \"2010-10-07 11:26:19\",\n            \"phone\": \"6-243-786-8288\",\n            \"ip\": \"80.104.81.144\",\n            \"country_name\": \"Bhutan\"\n        },\n        {\n            \"id\": 99983,\n            \"name\": \"Tyson Scott\",\n            \"email\": \"Tyson_Scott3583@famism.biz\",\n            \"birthday\": \"1910-04-01 06:39:27\",\n            \"phone\": \"4-301-540-2023\",\n            \"ip\": \"83.37.73.241\",\n            \"country_name\": \"Congo\"\n        },\n        {\n            \"id\": 99982,\n            \"name\": \"Bob Wheeler\",\n            \"email\": \"Bob_Wheeler545@extex.org\",\n            \"birthday\": \"1991-03-12 02:43:52\",\n            \"phone\": \"0-856-323-5814\",\n            \"ip\": \"66.21.7.232\",\n            \"country_name\": \"Nauru\"\n        },\n        {\n            \"id\": 99981,\n            \"name\": \"Brad Shepherd\",\n            \"email\": \"Brad_Shepherd4689@corti.com\",\n            \"birthday\": \"2008-03-23 08:14:36\",\n            \"phone\": \"2-188-338-7625\",\n            \"ip\": \"224.177.248.178\",\n            \"country_name\": \"Nicaragua\"\n        }\n    ],\n    \"per_page\": 20,\n    \"current_page\": 1,\n    \"total\": 100000,\n    \"status\": \"success\"\n}"
+				}
+			]
+		}
+	]
+}
